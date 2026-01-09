@@ -563,6 +563,14 @@ main>.section5>.divsection5>.formulaire>.petitediv>nav>#ent:hover>#submenu2{
     list-style: none;
 }
 
+main .section5 .divsection5 .formulaire .petitediv nav #ent #submenu2 a{
+    color: #FFFFFF;
+}
+
+main .section5 .divsection5 .formulaire .petitediv nav #ent #submenu2 a:hover{
+    color: #30CD8A;
+}
+
 /* Footer */
 
 footer{
@@ -573,7 +581,8 @@ footer{
 footer div{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 15px 60px;
+    margin: auto;
+    max-width: 1100px;
     gap: 30px;
     font-size: 16px;
     background-color: #363450;
@@ -585,14 +594,6 @@ footer div h2{
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     margin-bottom: 20px;
-}
-
-main .section5 .divsection5 .formulaire .petitediv nav #ent #submenu2 a{
-    color: #FFFFFF;
-}
-
-main .section5 .divsection5 .formulaire .petitediv nav #ent #submenu2 a:hover{
-    color: #30CD8A;
 }
 
 footer div ul{
@@ -689,6 +690,16 @@ footer .Copyright a{
         grid-template-columns: 2fr;
     }
 
+    main .section4 .droite .btn4{
+        position: unset;
+        margin: 20px auto;
+    }
+
+    main .section4 .gauche .btn44{
+        position: unset;
+        margin: 20px auto;
+    }
+
     main .section5 .divsection5{
         display: grid;
         grid-template-columns: 2fr;
@@ -702,5 +713,155 @@ footer .Copyright a{
 
     main .section5 h3{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px){
+    header a img{
+        width: 100%;
+    }
+
+    header .burgermenu{
+        display: flex;
+        justify-self: end;
+    }
+
+    main .section1{
+        padding: 20px 0;
+    }
+
+    main .section1 .divsection1{
+        display: inline;
+    }
+
+    main .section1 .divsection1 img{
+        width: 100%;
+    }
+
+    main .section1 .divsection1 h3{
+        font-size: 18px;
+    }
+
+    main .section1 .divsection1 h2{
+        font-size: 14px;
+    }
+
+    main .section1 .divsection1 p{
+        font-size: 11px;
+    }
+
+    main .section2 div{
+        display: inline;
+        margin: auto;
+        gap: 15px;
+    }
+
+    main .section2 div img{
+        width: 33px;
+    }
+
+    main .section2 div h2{
+        font-size: 14px;
+    }
+
+    main .section2 div p{
+        font-size: 11px;
+    }
+
+    main .section2 a{
+        position: relative;
+        top: 7px;
+    }
+
+    main .section3 .intervenants{
+        display: inline;
+        margin: auto;
+    }
+
+    main .section3 .hdecouvrer{
+        font-size: 18px;
+    }
+
+    main .section3 .hintervenants{
+        font-size: 14px;
+    }
+
+    main .section3 .pintervenants{
+        font-size: 11px;
+    }
+
+    main .section3 .intervenants .jeanlouis,
+    main .section3 .intervenants .vincent{
+        font-size: 14px;
+    }
+
+    main .section3 .intervenants .formateur1,
+    main .section3 .intervenants .pformateur1,
+    main .section3 .intervenants .formateur2,
+    main .section3 .intervenants .pformateur2{
+        font-size: 11px;
+    }
+
+    main .section4 .titresection4 .haccompagnement2{
+        font-size: 14px;
+    }
+
+    main .section4 .titresection4 .hréserver{
+        font-size: 18px;
+    }
+
+    main .section4 .droite{
+        display: inline;
+    }
+
+    main .section4 .droite .divimage22 #image22{
+        width: 100%;
+    }
+
+    main .section4 .gauche{
+        display: inline;
+    }
+
+    main .section4 .gauche .divimage33 #image33{
+        width: 100%;
+    }
+
+    main .section4 .droite .listedroite,
+    main .section4 .droite .uldroite li{
+        font-size: 13px;
+    }
+
+    main .section4 .gauche .listegauche,
+    main .section4 .gauche .ulgauche li{
+        font-size: 13px;
+    }
+
+    main .section5 .divsection5{
+        display: inline;
+    }
+
+    main .section5 .divsection5 .gauche .savoir{
+        font-size: 14px;
+    }
+
+    main .section5 .divsection5 .gauche .titredroite{
+        font-size: 18px;
+    }
+
+    main .section5 .divsection5 .gauche p{
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    main .section5 .divsection5 .formulaire .formulairenp{
+        display: inline;
+    }
+
+    main .section5 .divsection5 .formulaire .petitediv #ent .entreprise{
+        width: fit-content;
+    }
+
+    footer div{
+        display: inline-block;
     }
 }
